@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 
 interface NavbarProps {
   onOpenContact?: () => void;
@@ -71,8 +71,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, activeSection = '
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
         {/* Brand Logo */}
-        <a
-          href="/"
+        <Link
+          to="/"
           onClick={(e) => {
             e.preventDefault();
             setMobileMenuOpen(false);
@@ -86,9 +86,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, activeSection = '
           className="group flex items-center space-x-1"
         >
           <span className="text-3xl font-black tracking-tighter text-slate-900 group-hover:text-[#0052fe] transition-colors">
-            A<span className="text-[#0052fe]">.</span>
+            <img src="/logo.png" alt="" className='w-9' />
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation Links */}
         <nav className="hidden md:flex items-center space-x-8 lg:space-x-10">

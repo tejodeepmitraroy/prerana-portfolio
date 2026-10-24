@@ -1,11 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Hero } from '../components/Hero';
-import { StatsCounter } from '../components/StatsCounter';
 import { SelectedWork } from '../components/SelectedWork';
-import { ServicesSection } from '../components/ServicesSection';
 import { AboutSection } from '../components/AboutSection';
-import { TrustedBy } from '../components/TrustedBy';
 import { FooterSection } from '../components/FooterSection';
 import { ProjectModal } from '../components/ProjectModal';
 import type { ProjectItem } from '../data/portfolioData';
@@ -38,7 +35,7 @@ const Home: React.FC<HomeProps> = ({ onOpenContact }) => {
       />
 
       {/* Dark Stats Counter Banner */}
-      <StatsCounter />
+      {/* <StatsCounter /> */}
 
       {/* Selected Work / Projects */}
       <SelectedWork
@@ -50,13 +47,13 @@ const Home: React.FC<HomeProps> = ({ onOpenContact }) => {
       />
 
       {/* Services Section */}
-      <ServicesSection />
+      {/* <ServicesSection /> */}
 
       {/* About Me & Skills Section */}
       <AboutSection />
 
       {/* Trusted By Client Logos */}
-      <TrustedBy />
+      {/* <TrustedBy /> */}
 
       {/* Footer Section & CTA */}
       <FooterSection onOpenContact={handleOpenContact} />

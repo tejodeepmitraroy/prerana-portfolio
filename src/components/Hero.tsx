@@ -161,7 +161,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
                     BASED IN
                   </span>
                   <span className="text-xs font-black tracking-wider text-slate-900 block leading-tight">
-                    NEW YORK
+                 INDIA
                   </span>
                 </div>
               </div>
@@ -199,7 +199,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
               </div>
 
               {/* Handwritten Script Calligraphy Accent: Design Build Create */}
-              <div
+              {/* <div
                 className="absolute top-20 -right-6 sm:-right-8 z-20 pointer-events-none transform rotate-[8deg] animate-float"
                 style={{
                   transform: `translate(${mousePos.x * 14}px, ${mousePos.y * 14}px) rotate(8deg)`
@@ -212,7 +212,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
                   <br />
                   <span className="ml-8 text-[#0052fe]">Create</span>
                 </div>
-              </div>
+              </div> */}
 
               {/* Floating Interactive Badge (Left Corner) */}
               <div
@@ -225,11 +225,11 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
                   <Sparkles className="w-4 h-4 animate-spin-slow" />
                 </div>
                 <div>
-                  <div className="text-[10px] uppercase font-bold tracking-wider text-slate-400">
+                  {/* <div className="text-[10px] uppercase font-bold tracking-wider text-slate-400">
                     Art Director
-                  </div>
+                  </div> */}
                   <div className="text-xs font-black text-slate-900">
-                    UI/UX & Branding
+                    Industrial Designer
                   </div>
                 </div>
               </div>

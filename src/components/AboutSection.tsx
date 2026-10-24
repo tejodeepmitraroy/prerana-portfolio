@@ -42,7 +42,7 @@ export const AboutSection: React.FC = () => {
             {/* Handwritten Signature */}
             <div className="pt-2">
               <span className="font-script text-4xl sm:text-5xl text-slate-900 select-none block -rotate-3 hover:rotate-0 transition-transform duration-300">
-                Alex Carter
+                Preana Dutta
               </span>
             </div>
           </div>

@@ -94,9 +94,9 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onOpenContact }) =
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <div className="flex items-center gap-3">
             <span className="text-xl font-black text-white tracking-tighter">
-              A<span className="text-[#0052fe]">.</span>
+              <img src="/logo.png" alt="" className='w-6 invert-100' />
             </span>
-            <span>© 2025 Alex Carter. All rights reserved.</span>
+            <span>© 2025 Prerana Dutta. All rights reserved.</span>
           </div>
 
           <div className="flex items-center gap-6">
