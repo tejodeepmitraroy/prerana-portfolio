@@ -58,7 +58,7 @@ export const AboutSection: React.FC = () => {
                 <img
                   src={portfolioConfig.aboutImage}
                   alt="Alex Carter"
-                  className="w-full h-full object-cover object-center filter grayscale hover:grayscale-0 transition-all duration-700 contrast-105"
+                  className="water-refract w-full h-full object-cover object-center filter grayscale hover:grayscale-0 transition-all duration-700 contrast-105 cursor-pointer"
                   loading="lazy"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src =

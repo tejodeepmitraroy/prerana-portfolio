@@ -190,7 +190,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
                 <img
                   src={portfolioConfig.heroImage}
                   alt="Alex Carter - Creative Digital Designer"
-                  className="w-full h-full object-cover object-top filter grayscale contrast-110 brightness-95 hover:grayscale-0 transition-all duration-700"
+                  className="water-refract w-full h-full object-cover object-top filter grayscale contrast-110 brightness-95 hover:grayscale-0 transition-all duration-700 cursor-pointer"
                   loading="eager"
                 />
 

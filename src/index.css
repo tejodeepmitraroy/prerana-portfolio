@@ -110,6 +110,107 @@
   animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* Water Wave & Ripple Animations */
+@keyframes waveDriftSlow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes waveDriftReverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes waveDriftFast {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes waterBubbleFloat {
+  0% {
+    transform: translateY(0) scale(0.6);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-90px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes waterRippleExpand {
+  0% {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.8);
+    opacity: 0;
+  }
+}
+
+.animate-wave-slow {
+  animation: waveDriftSlow 10s linear infinite;
+  will-change: transform;
+}
+
+.animate-wave-reverse {
+  animation: waveDriftReverse 7s linear infinite;
+  will-change: transform;
+}
+
+.animate-wave-fast {
+  animation: waveDriftFast 4s linear infinite;
+  will-change: transform;
+}
+
+.animate-water-ripple {
+  animation: waterRippleExpand 0.85s cubic-bezier(0.1, 0.4, 0.2, 1) forwards;
+}
+
+.animate-bubble-1 {
+  animation: waterBubbleFloat 3s ease-in-out infinite;
+}
+
+.animate-bubble-2 {
+  animation: waterBubbleFloat 4.2s ease-in-out infinite 0.8s;
+}
+
+.animate-bubble-3 {
+  animation: waterBubbleFloat 3.6s ease-in-out infinite 1.6s;
+}
+
+.animate-bubble-4 {
+  animation: waterBubbleFloat 5s ease-in-out infinite 2.2s;
+}
+
+.water-refract {
+  transition: filter 0.6s ease, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, filter;
+}
+
+.group:hover .water-refract,
+.water-refract:hover {
+  filter: url(#water-ripple-filter);
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

@@ -56,7 +56,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onOpenContact }) => {
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover"
+            className="water-refract w-full h-full object-cover transition-transform duration-700 hover:scale-103 cursor-pointer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
           <div className="absolute bottom-8 left-8 right-8 text-white">

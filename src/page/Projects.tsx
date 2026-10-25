@@ -178,7 +178,7 @@ const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
               <img
                 src={spotlightProject.image}
                 alt={spotlightProject.title}
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                className="water-refract w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-slate-950 via-slate-950/40 to-transparent" />
               
@@ -566,11 +566,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="group relative bg-slate-900 overflow-hidden flex flex-col justify-end aspect-[4/4.8] transition-all duration-500 shadow-md hover:shadow-2xl hover:-translate-y-1.5 cursor-pointer">
-      {/* Background Image with Zoom */}
+      {/* Background Image with Water Wave Refraction */}
       <img
         src={project.image}
         alt={project.title}
-        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-108 group-hover:filter group-hover:brightness-90"
+        className="water-refract absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-108 group-hover:brightness-95"
         loading="lazy"
         onClick={onSelectProject}
       />
@@ -593,20 +593,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         )}
       </div>
 
-      {/* Bottom Information Card Bar (Turns Electric Blue on Hover) */}
-      <div className="relative z-10 p-6 flex flex-col justify-between bg-black/85 backdrop-blur-xs border-t border-white/10 group-hover:bg-[#0052fe]/95 transition-colors duration-400">
+      {/* Bottom Information Card Bar */}
+      <div className="relative z-10 p-6 flex flex-col justify-between bg-black/85 backdrop-blur-xs border-t border-white/10 group-hover:border-white/30 group-hover:bg-black/90 transition-all duration-400">
         <div className="flex items-start justify-between gap-4 mb-3" onClick={onSelectProject}>
           <div>
             <div className="text-xs font-black tracking-widest uppercase text-white mb-1">
               {project.title}
             </div>
-            <div className="text-xs text-slate-300 font-medium group-hover:text-white/90 transition-colors">
+            <div className="text-xs text-slate-300 font-medium group-hover:text-white transition-colors">
               {project.subtitle}
             </div>
           </div>
 
           {/* Arrow Icon Button */}
-          <div className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-white shrink-0 group-hover:bg-white group-hover:text-[#0052fe] transition-all duration-300 transform group-hover:rotate-45">
+          <div className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-white shrink-0 group-hover:bg-white group-hover:text-black transition-all duration-300 transform group-hover:rotate-45 shadow-sm">
             <ArrowUpRight className="w-4 h-4" />
           </div>
         </div>

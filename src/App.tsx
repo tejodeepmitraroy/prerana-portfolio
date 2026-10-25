@@ -52,6 +52,35 @@ function AppContent() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 flex flex-col font-sans-display selection:bg-[#0052fe] selection:text-white">
+      {/* Global SVG Water Wave Refraction Filter */}
+      <svg className="fixed w-0 h-0 pointer-events-none" aria-hidden="true" style={{ position: 'absolute', width: 0, height: 0 }}>
+        <defs>
+          <filter id="water-ripple-filter" x="-10%" y="-10%" width="120%" height="120%">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.015 0.035"
+              numOctaves="3"
+              result="turbulence"
+            >
+              <animate
+                attributeName="baseFrequency"
+                dur="4.5s"
+                keyTimes="0;0.5;1"
+                values="0.012 0.03; 0.022 0.05; 0.012 0.03"
+                repeatCount="indefinite"
+              />
+            </feTurbulence>
+            <feDisplacementMap
+              in="SourceGraphic"
+              in2="turbulence"
+              scale="18"
+              xChannelSelector="R"
+              yChannelSelector="G"
+            />
+          </filter>
+        </defs>
+      </svg>
+
       {/* Top Navigation */}
       <Navbar
         onOpenContact={() => setIsContactOpen(true)}
