@@ -24,7 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, activeSection = '
   const navLinks = [
     { name: 'HOME', path: '/', isPage: true, id: 'home' },
     { name: 'PROJECTS', path: '/projects', isPage: true, id: 'portfolio' },
-    { name: 'SERVICES', path: '/#services', isPage: false, id: 'services' },
+    // { name: 'SERVICES', path: '/#services', isPage: false, id: 'services' },
     { name: 'ABOUT', path: '/#about', isPage: false, id: 'about' },
     { name: 'CONTACT', path: '/#contact', isPage: false, id: 'contact' },
   ];

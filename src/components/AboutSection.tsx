@@ -47,25 +47,19 @@ export const AboutSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Center Column: Portrait with Layered Blue Block */}
+          {/* Center Column: Portrait Image */}
           <div className="lg:col-span-4 flex justify-center">
-            <div className="relative w-full max-w-[300px] aspect-[3.8/4.8]">
-              {/* Offset Electric Blue Box */}
-              <div className="absolute top-0 right-0 w-[80%] h-[92%] bg-[#0052fe] z-0 shadow-lg shadow-blue-500/20" />
-
-              {/* Portrait Image */}
-              <div className="relative z-10 w-[88%] h-[94%] overflow-hidden mt-6 ml-0">
-                <img
-                  src={portfolioConfig.aboutImage}
-                  alt="Alex Carter"
-                  className="water-refract w-full h-full object-cover object-center filter grayscale hover:grayscale-0 transition-all duration-700 contrast-105 cursor-pointer"
-                  loading="lazy"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src =
-                      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80';
-                  }}
-                />
-              </div>
+            <div className="relative w-full max-w-[300px] aspect-[3.8/4.8] shadow-lg border border-slate-200/80 overflow-hidden">
+              <img
+                src={portfolioConfig.aboutImage}
+                alt="Prerana Dutta"
+                className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-[1.02] cursor-pointer"
+                loading="lazy"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src =
+                    'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80';
+                }}
+              />
             </div>
           </div>
 

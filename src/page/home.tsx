@@ -39,6 +39,10 @@ const Home: React.FC<HomeProps> = ({ onOpenContact }) => {
 
       {/* Selected Work / Projects */}
       <SelectedWork
+        onSelectCategory={(category) => {
+          navigate('/projects', { state: { category: category.name } });
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
         onSelectProject={(project) => setSelectedProject(project)}
         onViewAllProjects={() => {
           navigate('/projects');

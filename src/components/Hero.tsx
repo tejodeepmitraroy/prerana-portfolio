@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ArrowRight, Sparkles, MapPin } from 'lucide-react';
 import { portfolioConfig } from '../data/portfolioData';
 
@@ -8,20 +8,6 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const { clientX, clientY, currentTarget } = e;
-    const rect = currentTarget.getBoundingClientRect();
-    const x = (clientX - rect.left) / rect.width - 0.5;
-    const y = (clientY - rect.top) / rect.height - 0.5;
-    setMousePos({ x, y });
-  };
-
-  const handleMouseLeave = () => {
-    setMousePos({ x: 0, y: 0 });
-  };
-
   const scrollToWork = () => {
     if (onViewWork) {
       onViewWork();
@@ -36,13 +22,8 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
   return (
     <section
       id="home"
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
       className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-white"
     >
-      {/* Background Ambience */}
-      <div className="absolute top-12 right-1/4 w-[480px] h-[480px] bg-blue-50/60 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-glow" />
-
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center min-h-[660px]">
           
@@ -161,36 +142,23 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
                     BASED IN
                   </span>
                   <span className="text-xs font-black tracking-wider text-slate-900 block leading-tight">
-                 INDIA
+                    INDIA
                   </span>
                 </div>
               </div>
             </div>
 
-            {/* Image Stage Container with Mouse Parallax Effect */}
-            <div
-              className="relative w-full max-w-[420px] aspect-[4/5] sm:aspect-[3.6/4.8] flex items-end justify-center transition-transform duration-300 ease-out"
-              style={{
-                transform: `perspective(1000px) rotateY(${mousePos.x * 8}deg) rotateX(${-mousePos.y * 8}deg)`
-              }}
-            >
-              {/* Electric Blue Backdrop Block (Matching Image Geometry) */}
-              <div
-                className="absolute top-0 right-0 w-[62%] h-[88%] bg-[#0052fe] z-0 rounded-none shadow-2xl shadow-blue-600/30 transition-transform duration-500"
-                style={{
-                  transform: `translate(${mousePos.x * -10}px, ${mousePos.y * -10}px)`
-                }}
-              />
-
+            {/* Image Stage Container */}
+            <div className="relative w-full max-w-[420px] aspect-[4/5] sm:aspect-[3.6/4.8] flex items-end justify-center">
               {/* Secondary subtle line accent */}
               <div className="absolute -bottom-4 -left-4 w-28 h-28 border-2 border-slate-900/10 -z-10" />
 
               {/* Main Model Cutout / Image */}
-              <div className="relative z-10 w-[90%] h-[95%] overflow-hidden">
+              <div className="relative z-10 w-full h-full overflow-hidden">
                 <img
                   src={portfolioConfig.heroImage}
-                  alt="Alex Carter - Creative Digital Designer"
-                  className="water-refract w-full h-full object-cover object-top filter grayscale contrast-110 brightness-95 hover:grayscale-0 transition-all duration-700 cursor-pointer"
+                  alt="Prerana - Product Designer"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-[1.02] cursor-pointer"
                   loading="eager"
                 />
 
@@ -198,36 +166,12 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent pointer-events-none" />
               </div>
 
-              {/* Handwritten Script Calligraphy Accent: Design Build Create */}
-              {/* <div
-                className="absolute top-20 -right-6 sm:-right-8 z-20 pointer-events-none transform rotate-[8deg] animate-float"
-                style={{
-                  transform: `translate(${mousePos.x * 14}px, ${mousePos.y * 14}px) rotate(8deg)`
-                }}
-              >
-                <div className="font-script text-3xl sm:text-4xl text-[#0052fe] drop-shadow-md select-none whitespace-nowrap leading-[1.05] font-bold">
-                  Design
-                  <br />
-                  <span className="ml-4 text-slate-900">Build</span>
-                  <br />
-                  <span className="ml-8 text-[#0052fe]">Create</span>
-                </div>
-              </div> */}
-
-              {/* Floating Interactive Badge (Left Corner) */}
-              <div
-                className="absolute bottom-6 -left-4 sm:-left-8 z-20 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-none border border-slate-200/90 shadow-xl shadow-slate-900/10 flex items-center gap-3 animate-float-delayed"
-                style={{
-                  transform: `translate(${mousePos.x * -16}px, ${mousePos.y * -16}px)`
-                }}
-              >
-                <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-[#0052fe]">
+              {/* Interactive Badge (Left Corner) */}
+              <div className="absolute bottom-6 -left-4 sm:-left-8 z-20 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-none border border-slate-200/90 shadow-xl shadow-slate-900/10 flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-[#0052fe]">
                   <Sparkles className="w-4 h-4 animate-spin-slow" />
                 </div>
                 <div>
-                  {/* <div className="text-[10px] uppercase font-bold tracking-wider text-slate-400">
-                    Art Director
-                  </div> */}
                   <div className="text-xs font-black text-slate-900">
                     Industrial Designer
                   </div>

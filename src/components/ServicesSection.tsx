@@ -51,8 +51,8 @@ export const ServicesSection: React.FC = () => {
                 key={service.id}
                 className="bg-white p-8 sm:p-10 flex items-start gap-5 hover:bg-slate-50/80 transition-colors group"
               >
-                {/* Circular Blue Icon */}
-                <div className="w-12 h-12 rounded-full border border-[#0052fe]/40 bg-blue-50/60 flex items-center justify-center shrink-0 group-hover:bg-[#0052fe] group-hover:border-[#0052fe] group-hover:text-white transition-all duration-300 transform group-hover:scale-105">
+                {/* Circular Icon */}
+                <div className="w-12 h-12 rounded-full border border-slate-200 bg-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#0052fe] group-hover:border-[#0052fe] group-hover:text-white transition-all duration-300 transform group-hover:scale-105">
                   <div className="group-hover:brightness-200 group-hover:contrast-200">
                     {getIcon(service.icon)}
                   </div>

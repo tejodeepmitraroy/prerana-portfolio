@@ -1,5 +1,5 @@
-import React, { useState, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useMemo, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import {
   ArrowUpRight,
   Search,
@@ -28,13 +28,23 @@ type SortOption = 'latest' | 'alphabetical' | 'featured';
 
 const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   // State
-  const [selectedCategory, setSelectedCategory] = useState<string>('ALL');
+  const initialCategory = (location.state as { category?: string })?.category || 'ALL';
+  const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [viewMode, setViewMode] = useState<ViewMode>('categorized');
+  const [viewMode, setViewMode] = useState<ViewMode>(initialCategory !== 'ALL' ? 'grid' : 'categorized');
   const [sortBy, setSortBy] = useState<SortOption>('featured');
   const [activeModalProject, setActiveModalProject] = useState<ProjectItem | null>(null);
+
+  useEffect(() => {
+    const navCategory = (location.state as { category?: string })?.category;
+    if (navCategory) {
+      setSelectedCategory(navCategory);
+      setViewMode('grid');
+    }
+  }, [location.state]);
 
   // Available categories list
   const categoryList = useMemo(() => {
@@ -94,8 +104,6 @@ const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
     <div className="w-full pt-20 bg-white min-h-screen text-slate-900 font-sans-display selection:bg-[#0052fe] selection:text-white">
       {/* Hero Header Section */}
       <section className="relative pt-10 pb-16 md:pt-16 md:pb-20 border-b border-slate-100 overflow-hidden bg-white">
-        {/* Ambient Glow */}
-        <div className="absolute top-0 right-1/4 w-[450px] h-[450px] bg-blue-50/70 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-glow" />
 
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Top Eyebrow Bar */}
@@ -108,7 +116,7 @@ const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
             </div>
 
             <div className="hidden sm:flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
-              <span>ALEX CARTER</span>
+              <span>PRERANA DUTTA</span>
               <span>•</span>
               <span className="text-slate-900 font-extrabold">{portfolioConfig.projects.length} PROJECTS CATALOGED</span>
             </div>
@@ -133,7 +141,7 @@ const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
                   <div className="text-2xl font-black text-slate-950 mt-0.5">4 Core Fields</div>
                   <div className="text-xs text-slate-500 mt-1 font-medium">Brand • Web • UI/UX • Graphic</div>
                 </div>
-                <div className="w-10 h-10 rounded-full bg-blue-50 border border-[#0052fe]/20 flex items-center justify-center text-[#0052fe]">
+                <div className="w-10 h-10 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-700">
                   <Layers className="w-5 h-5" />
                 </div>
               </div>
@@ -411,7 +419,7 @@ const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
                   <div className="border-b-2 border-slate-950 pb-6 mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
                     <div>
                       <div className="flex items-center gap-3 mb-2">
-                        <span className="text-xs font-black tracking-widest text-[#0052fe] bg-blue-50 px-2 py-0.5 border border-[#0052fe]/20">
+                        <span className="text-xs font-black tracking-widest text-slate-800 bg-slate-100 px-2 py-0.5 border border-slate-200">
                           0{index + 1} / 04
                         </span>
                         <span className="text-xs font-bold tracking-widest text-slate-400 uppercase">
