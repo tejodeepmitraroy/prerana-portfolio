@@ -55,31 +55,29 @@ export const portfolioConfig = {
   bio: "I am a product designer passionate about creating lifestyle products that simplify everyday living. My design approach focuses on understanding user needs, solving real-life problems, and transforming ideas into functional, meaningful, and aesthetically pleasing products that enhance the quality of life.",
   location: "Kolkata, West Bengal",
   email: "prerana200226@gmail.com",
-  phone: "+91-9062268897",
+  phone: "+91-9123895330",
   badgeText: "AVAILABLE FOR FREELANCE • PRODUCT • PACKAGING • BRANDING •",
   handwrittenScript: "Design Build Create",
-  heroImage: "/profile-picture-2.jpeg",
+  heroImage: "/profile-picture.jpeg",
   aboutImage: "/profile-picture.jpeg",
-
   aboutBio: "I'm an industrial and product designer with a passion for creating meaningful, functional, and visually striking products and packaging. I help brands turn their ideas into tangible, high-impact consumer experiences.",
   aboutHeadline: "DESIGN IS NOT JUST MY PROFESSION, IT'S MY PASSION.",
 
   stats: [
     { value: "5+", numeric: 5, label: "YEARS OF EXPERIENCE", suffix: "+" },
-    { value: "70+", numeric: 70, label: "PROJECTS COMPLETED", suffix: "+" },
     { value: "35+", numeric: 35, label: "HAPPY CLIENTS", suffix: "+" },
     { value: "10+", numeric: 10, label: "INDUSTRY AWARDS", suffix: "+" }
   ] as StatItem[],
 
   categories: [
     {
-      id: "design-projects",
-      name: "DESIGN PROJECT",
+      id: "logo-branding",
+      name: "Logo & Branding",
       count: 4,
       tagline: "Holistic Product Identity & Commercial Mockups",
       description: "Transforming physical products into cohesive brand ecosystems through bespoke 3D mockups, retail merchandising, and tactile visual identities.",
       images: [
-        "/category/design.jpeg"
+        "/category/logo.png"
       ]
     },
     {
@@ -89,7 +87,7 @@ export const portfolioConfig = {
       tagline: "Tactile Consumer Packaging & Shelf Presence",
       description: "Engineering retail standup pouches, eco-conscious boxes, and die-cut production labels that captivate consumers on the shelf.",
       images: [
-        "/category/packaging.jpeg"
+        "/category/packaging.png"
       ]
     },
     {
@@ -213,10 +211,10 @@ export const portfolioConfig = {
   ],
 
   socials: [
-    { name: "Behance", url: "https://behance.net" },
-    { name: "Dribbble", url: "https://dribbble.com" },
-    { name: "LinkedIn", url: "https://linkedin.com" },
-    { name: "Instagram", url: "https://instagram.com" }
+    // { name: "Behance", url: "https://behance.net" },
+    // { name: "Dribbble", url: "https://dribbble.com" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/prerana-dutta-ba6a03377" },
+    { name: "Instagram", url: "https://www.instagram.com/prec.on2025?exln=OGVjZWpzeDM0bmVy" }
   ]
 };
 

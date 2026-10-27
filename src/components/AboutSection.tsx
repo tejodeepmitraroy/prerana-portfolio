@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Download, Check } from 'lucide-react';
+import { Download, Check, Briefcase, FolderCheck, Users, Trophy } from 'lucide-react';
 import { portfolioConfig } from '../data/portfolioData';
+
+const statIcons = [Briefcase, FolderCheck, Users, Trophy];
 
 export const AboutSection: React.FC = () => {
   const [downloaded, setDownloaded] = useState(false);
@@ -10,7 +12,7 @@ export const AboutSection: React.FC = () => {
     // Simulating resume download
     const link = document.createElement('a');
     link.href = '#';
-    link.setAttribute('download', 'Alex_Carter_Resume.pdf');
+    link.setAttribute('download', 'Prerana_Dutta_Resume.pdf');
     setTimeout(() => {
       setDownloaded(false);
     }, 2500);
@@ -42,7 +44,7 @@ export const AboutSection: React.FC = () => {
             {/* Handwritten Signature */}
             <div className="pt-2">
               <span className="font-script text-4xl sm:text-5xl text-slate-900 select-none block -rotate-3 hover:rotate-0 transition-transform duration-300">
-                Preana Dutta
+                Prerana Dutta
               </span>
             </div>
           </div>
@@ -63,32 +65,47 @@ export const AboutSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Skill Bars & Resume Download */}
-          <div className="lg:col-span-4 flex flex-col justify-center space-y-7">
-            {/* Skill Bars */}
-            <div className="space-y-6">
-              {portfolioConfig.skills.map((skill) => (
-                <div key={skill.name} className="space-y-2">
-                  <div className="flex justify-between items-center text-xs font-black tracking-wider uppercase text-slate-900">
-                    <span>{skill.name}</span>
-                    <span className="text-slate-500 font-bold">{skill.percentage}%</span>
-                  </div>
-                  {/* Progress Bar Container */}
-                  <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                    <div
-                      className="h-full bg-[#0052fe] rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: `${skill.percentage}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
+          {/* Right Column: Key Stats & Resume Download */}
+          <div className="lg:col-span-4 flex flex-col justify-center space-y-6">
+            <div>
+              <div className="text-xs font-black tracking-[0.2em] uppercase text-[#0052fe] mb-2">
+                KEY STATS & IMPACT
+              </div>
+              <h3 className="text-xl sm:text-2xl font-black text-slate-950 uppercase tracking-tight">
+                PROVEN TRACK RECORD
+              </h3>
             </div>
 
+            {/* 2x2 Stats Grid */}
+            {/* <div className="grid grid-cols-2 gap-3.5 sm:gap-4">
+              {portfolioConfig.stats.map((stat, idx) => {
+                const Icon = statIcons[idx % statIcons.length];
+                return (
+                  <div
+                    key={stat.label}
+                    className="group relative p-4 sm:p-5 bg-slate-50/70 hover:bg-white border border-slate-200/80 hover:border-[#0052fe] transition-all duration-300 rounded-none flex flex-col justify-between"
+                  >
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-950 group-hover:text-[#0052fe] transition-colors tracking-tight">
+                        {stat.value}
+                      </span>
+                      <div className="w-8 h-8 rounded-full bg-white group-hover:bg-[#0052fe]/10 flex items-center justify-center text-slate-400 group-hover:text-[#0052fe] transition-colors shadow-2xs">
+                        <Icon className="w-4 h-4" />
+                      </div>
+                    </div>
+                    <div className="text-[10px] sm:text-[11px] font-bold tracking-wider text-slate-500 group-hover:text-slate-800 uppercase leading-snug">
+                      {stat.label}
+                    </div>
+                  </div>
+                );
+              })}
+            </div> */}
+
             {/* Download Resume Button */}
-            <div className="pt-4">
+            {/* <div className="pt-2">
               <button
                 onClick={handleDownload}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-slate-900 hover:border-[#0052fe] hover:bg-[#0052fe] hover:text-white text-slate-900 px-8 py-3.5 text-xs font-black tracking-widest uppercase transition-all duration-300 shadow-xs"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-slate-900 hover:border-[#0052fe] hover:bg-[#0052fe] hover:text-white text-slate-900 px-8 py-3.5 text-xs font-black tracking-widest uppercase transition-all duration-300 shadow-xs cursor-pointer"
               >
                 {downloaded ? (
                   <>
@@ -102,7 +119,7 @@ export const AboutSection: React.FC = () => {
                   </>
                 )}
               </button>
-            </div>
+            </div> */}
           </div>
 
         </div>

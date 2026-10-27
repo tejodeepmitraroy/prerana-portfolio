@@ -7,7 +7,7 @@ interface HeroProps {
   onOpenContact?: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
+export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact: _onOpenContact }) => {
   const scrollToWork = () => {
     if (onViewWork) {
       onViewWork();
@@ -71,13 +71,13 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
               </button>
 
               {/* Rotating Circular Stamp Badge */}
-              <div
+              {/* <div
                 className="relative group cursor-pointer"
                 onClick={onOpenContact}
                 title="Click to get in touch"
               >
                 <div className="w-32 h-32 md:w-36 md:h-36 relative flex items-center justify-center">
-                  {/* Rotating SVG Circular Text */}
+                  {/* Rotating SVG Circular Text 
                   <svg
                     viewBox="0 0 160 160"
                     className="w-full h-full animate-spin-slow transition-transform duration-700 group-hover:scale-105"
@@ -88,7 +88,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
                         d="M 80, 80 m -58, 0 a 58,58 0 1,1 116,0 a 58,58 0 1,1 -116,0"
                       />
                     </defs>
-                    {/* Decorative Outer Dashed Ring */}
+                    {/* Decorative Outer Dashed Ring 
                     <circle
                       cx="80"
                       cy="80"
@@ -98,7 +98,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
                       strokeWidth="1.2"
                       strokeDasharray="4 3"
                     />
-                    {/* Inner Solid Ring */}
+                    {/* Inner Solid Ring 
                     <circle
                       cx="80"
                       cy="80"
@@ -107,7 +107,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
                       stroke="#cbd5e1"
                       strokeWidth="1"
                     />
-                    {/* Curving Text Path */}
+                    {/* Curving Text Path 
                     <text className="text-[8.8px] font-black uppercase tracking-[0.22em] fill-slate-900">
                       <textPath href="#circlePath" startOffset="0%">
                         • AVAILABLE FOR FREELANCE • DESIGN • WEB • BRAND
@@ -115,7 +115,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
                     </text>
                   </svg>
 
-                  {/* Stamp Center Content */}
+                  {/* Stamp Center Content 
                   <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none text-center px-4">
                     <span className="text-[9px] font-extrabold uppercase text-slate-900 leading-tight">
                       AVAILABLE
@@ -126,7 +126,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact }) => {
                     <span className="w-1.5 h-1.5 rounded-full bg-[#0052fe] mt-1 animate-ping" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

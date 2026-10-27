@@ -113,7 +113,7 @@ function AppContent() {
             element={<About onOpenContact={() => setIsContactOpen(true)} />}
           />
           <Route
-            path="/project/:id"
+            path="/projects/:id"
             element={<ProjectDetails onOpenContact={() => setIsContactOpen(true)} />}
           />
         </Routes>
