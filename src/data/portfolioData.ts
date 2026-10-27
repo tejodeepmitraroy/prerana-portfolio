@@ -73,7 +73,7 @@ export const portfolioConfig = {
     {
       id: "logo-branding",
       name: "Logo & Branding",
-      count: 4,
+      count: 2,
       tagline: "Holistic Product Identity & Commercial Mockups",
       description: "Transforming physical products into cohesive brand ecosystems through bespoke 3D mockups, retail merchandising, and tactile visual identities.",
       images: [
@@ -82,8 +82,8 @@ export const portfolioConfig = {
     },
     {
       id: "packaging",
-      name: "PACKAGING DESIGN",
-      count: 4,
+      name: "Packaging Design",
+      count: 2,
       tagline: "Tactile Consumer Packaging & Shelf Presence",
       description: "Engineering retail standup pouches, eco-conscious boxes, and die-cut production labels that captivate consumers on the shelf.",
       images: [
@@ -91,9 +91,19 @@ export const portfolioConfig = {
       ]
     },
     {
+      id: "product-branding",
+      name: "Product Branding",
+      count: 2,
+      tagline: "Product Ecosystems & Retail Merchandising",
+      description: "Bespoke packaging and modern retail mockups that transform everyday items into memorable consumer experiences.",
+      images: [
+        "/product-branding/lime mocab.jpg.jpeg"
+      ]
+    },
+    {
       id: "photography",
-      name: "PHOTOGRAPHY",
-      count: 4,
+      name: "Photography",
+      count: 1,
       tagline: "Visual Systems & Distinctive Identities",
       description: "Crafting iconic brand systems, typography guidelines, and art direction that articulate clear values and command industry presence.",
       images: [
@@ -106,29 +116,86 @@ export const portfolioConfig = {
     // --- LOGO & BRANDING ---
     {
       id: "design-project-1",
-      category: "Design",
-      title: "Design Project",
-      subtitle: "Designing project",
-      image: "/design-project/fridge-project-1.jpeg",
+      category: "Logo & Branding",
+      title: "Lime Fresh Visual Identity",
+      subtitle: "Negative Space Typographic Mark",
+      image: "/category/logo.png",
       images: [
-        "/design-project/fridge-project-1.jpeg",
-        "/design-project/fridge-project-1.jpeg",
-        "/design-project/fridge-project-1.jpeg",
-
+        "/category/logo.png",
+        "/logo-banding/logo-1.png",
+        "/logo-banding/Screenshot 2026-07-11 145607.png"
       ],
       tags: ["Typography", "Negative Space", "Fruit Branding"],
       client: "Lime Fresh Organics",
       year: "2024",
-      featured: false,
+      featured: true,
       deliverables: ["Bespoke Lettering", "Vector Silhouette Mark", "Monochrome Variants", "Digital Iconography"],
       stat: { value: "100%", label: "Custom Letterforms" },
       overview: "An artistic, negative-space typographic logo sculpted directly inside a sliced lime silhouette, embodying pure freshness, organic simplicity, and playful modern geometry."
+    },
+    {
+      id: "bangur-brand-suite",
+      category: "Logo & Branding",
+      title: "Bangur Brand System & Guidelines",
+      subtitle: "Corporate Identity & Geometry Mark",
+      image: "/logo-banding/logo-bangur-1.png",
+      images: [
+        "/logo-banding/logo-bangur-1.png",
+        "/logo-banding/logo-bangur-2.png",
+        "/logo-banding/Screenshot 2026-07-11 145539.png"
+      ],
+      tags: ["Brand Guidelines", "Logomark", "Corporate Identity"],
+      client: "Bangur BFL Corp",
+      year: "2024",
+      featured: false,
+      deliverables: ["Logotype System", "Visual Identity Matrix", "Corporate Stationary", "Brand Book"],
+      stat: { value: "100%", label: "Vector Cohesion" },
+      overview: "A structured, geometric corporate identity system balancing high structural rigidity with minimalist contemporary finesse."
+    },
+
+    // --- PACKAGING DESIGN ---
+    {
+      id: "eco-packaging-pouch",
+      category: "Packaging Design",
+      title: "Eco-Conscious Retail Pouch",
+      subtitle: "Matte Foil Standup Pouch Packaging",
+      image: "/category/packaging.png",
+      images: [
+        "/category/packaging.png",
+        "/package-design/Gemini_Generated_Image_1gsuup1gsuup1gsu.png",
+        "/package-design/Screenshot 2026-07-13 155016.png"
+      ],
+      tags: ["Retail Standup Pouch", "Matte Foil", "Food Packaging"],
+      client: "Bhanu Farms Ltd",
+      year: "2024",
+      featured: true,
+      deliverables: ["Dieline Architecture", "Pantone Spec Sheet", "Spot UV Application", "Nutritional Layout"],
+      stat: { value: "350gsm", label: "Recycled Board" },
+      overview: "An artisanal, tactile stand-up zipper pouch engineered for organic dried goods, featuring warm organic earth tones and a soft-touch matte protective barrier."
+    },
+    {
+      id: "carrot-packaging",
+      category: "Packaging Design",
+      title: "Carrot Organic Produce Pack",
+      subtitle: "Sustainable Produce Box & Labeling",
+      image: "/package-design/Gemini_Generated_Image_stpqucstpqucstpq.png",
+      images: [
+        "/package-design/Gemini_Generated_Image_stpqucstpqucstpq.png",
+        "/package-design/new without pic pack.png"
+      ],
+      tags: ["Farm Packaging", "Eco Box", "Label Design"],
+      client: "Al Huda Herbal Remedies",
+      year: "2024",
+      featured: false,
+      deliverables: ["Corrugated Box Design", "Die-Cut Windows", "Eco Seal System", "Barcode Architecture"],
+      stat: { value: "100%", label: "Compostable" },
+      overview: "Ergonomic farm-to-table organic harvest packaging with breathable ventilation die-cuts and minimal ink usage."
     },
 
     // --- PRODUCT BRANDING ---
     {
       id: "lime-eco-bags",
-      category: "PRODUCT BRANDING",
+      category: "Product Branding",
       title: "LIME Sustainable Retail Bags",
       subtitle: "Kraft Paper Carry Bags & Eco Merchandising",
       image: "/product-branding/lime mocab.jpg.jpeg",
@@ -140,30 +207,47 @@ export const portfolioConfig = {
       tags: ["Eco Packaging", "Retail Carry Bags", "Kraft Paper"],
       client: "Lime Fresh Organics",
       year: "2024",
-      featured: false,
+      featured: true,
       deliverables: ["Screenprinted Kraft Bags", "Twisted Paper Handles", "Sustainable Store Collateral", "Point-of-Sale Signage"],
-      stat: { value: "100%", label: "Biodegradable Materials" },
+      stat: { value: "100%", label: "Biodegradable" },
       overview: "Sustainable, unbleached kraft paper shopping bags featuring organic botanical typography, designed to elevate in-store customer touchpoints and affirm the brand's eco-conscious mission."
     },
-    // --- PRODUCT BRANDING ---
     {
-      id: "lime-eco-bags",
-      category: "PRODUCT BRANDING",
-      title: "LIME Sustainable Retail Bags",
-      subtitle: "Kraft Paper Carry Bags & Eco Merchandising",
-      image: "/product-branding/lime mocab.jpg.jpeg",
+      id: "soda-can-branding",
+      category: "Product Branding",
+      title: "Sparkling Soda Can Mockup",
+      subtitle: "Aluminum Can Label & Retail Visuals",
+      image: "/product-branding/mockup soda can.png",
       images: [
-        "/product-branding/lime mocab.jpg.jpeg",
-        "/product-branding/mocab 2.jpg.jpeg",
-        "/product-branding/Screenshot 2026-07-03 222402.png"
+        "/product-branding/mockup soda can.png",
+        "/product-branding/Screenshot 2026-06-13 060442.png"
       ],
-      tags: ["Eco Packaging", "Retail Carry Bags", "Kraft Paper"],
-      client: "Lime Fresh Organics",
-      year: "2024",
+      tags: ["Beverage Can", "Retail Mockup", "3D Visualization"],
+      client: "TechNova Refresh",
+      year: "2025",
       featured: false,
-      deliverables: ["Screenprinted Kraft Bags", "Twisted Paper Handles", "Sustainable Store Collateral", "Point-of-Sale Signage"],
-      stat: { value: "100%", label: "Biodegradable Materials" },
-      overview: "Sustainable, unbleached kraft paper shopping bags featuring organic botanical typography, designed to elevate in-store customer touchpoints and affirm the brand's eco-conscious mission."
+      deliverables: ["3D Can Render", "Label Foil Details", "Packaging Mockups", "Print-Ready Vector Files"],
+      stat: { value: "330ml", label: "Can Spec" },
+      overview: "High-contrast dynamic beverage packaging mockup crafted with vivid typography and matte-finish metallic gradients for maximal shelf attraction."
+    },
+
+    // --- PHOTOGRAPHY ---
+    {
+      id: "studio-photography",
+      category: "Photography",
+      title: "Commercial Product Photography",
+      subtitle: "Studio Lighting & Editorial Stills",
+      image: "/category/photography.jpeg",
+      images: [
+        "/category/photography.jpeg"
+      ],
+      tags: ["Studio Stills", "Editorial Direction", "Lighting"],
+      client: "EVAR Enterprises",
+      year: "2025",
+      featured: false,
+      deliverables: ["Studio Lighting Setup", "Hi-Res Retouching", "Color Grading", "Social Media Lookbook"],
+      stat: { value: "8K", label: "Studio Capture" },
+      overview: "High-key editorial and commercial photography capturing tactile product surfaces, material textures, and industrial silhouettes."
     }
   ] as ProjectItem[],
 

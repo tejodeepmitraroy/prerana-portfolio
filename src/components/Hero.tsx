@@ -26,7 +26,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact: _onOpenCo
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center min-h-[660px]">
-          
+
           {/* Left Column: Headlines & CTA */}
           <div className="lg:col-span-7 flex flex-col justify-center z-10">
             {/* Eyebrow Tag */}
@@ -132,7 +132,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact: _onOpenCo
 
           {/* Right Column: Hero Visual with Layered Blue Block & Model */}
           <div className="lg:col-span-5 relative flex flex-col items-center lg:items-end">
-            
+
             {/* Top Right Label: Based in New York */}
             <div className="w-full flex justify-end mb-3 pr-2 sm:pr-4">
               <div className="inline-flex items-center gap-1.5 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-slate-200/90 shadow-xs text-right">
