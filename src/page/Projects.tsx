@@ -6,7 +6,6 @@ import {
   SlidersHorizontal,
   Layers,
   ArrowRight,
-  ArrowLeft,
   Filter,
   Eye,
   CheckCircle2,
@@ -171,8 +170,6 @@ const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
     navigate(`/project/${projectId}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-  const activeCategoryItem = carouselItems[carouselIndex] || carouselItems[0];
 
   return (
     <div className="w-full pt-20 bg-white min-h-screen text-slate-900 font-sans-display selection:bg-[#0052fe] selection:text-white">

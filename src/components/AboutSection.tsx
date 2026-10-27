@@ -1,22 +1,7 @@
-import React, { useState } from 'react';
-import { Download, Check, Briefcase, FolderCheck, Users, Trophy } from 'lucide-react';
+import React from 'react';
 import { portfolioConfig } from '../data/portfolioData';
 
-const statIcons = [Briefcase, FolderCheck, Users, Trophy];
-
 export const AboutSection: React.FC = () => {
-  const [downloaded, setDownloaded] = useState(false);
-
-  const handleDownload = () => {
-    setDownloaded(true);
-    // Simulating resume download
-    const link = document.createElement('a');
-    link.href = '#';
-    link.setAttribute('download', 'Prerana_Dutta_Resume.pdf');
-    setTimeout(() => {
-      setDownloaded(false);
-    }, 2500);
-  };
 
   return (
     <section id="about" className="py-20 md:py-28 bg-white border-t border-slate-100 overflow-hidden">
