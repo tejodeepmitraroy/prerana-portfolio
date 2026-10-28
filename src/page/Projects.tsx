@@ -196,7 +196,7 @@ const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
 
           {/* Main Title & Hero Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
-            <div className="lg:col-span-8">
+            {/* <div className="lg:col-span-8">
               <h1 className="text-4xl sm:text-6xl md:text-7xl font-black text-slate-950 uppercase tracking-tight leading-[0.96] mb-5">
                 INDEX OF <span className="text-[#0052fe]">ALL PROJECTS</span> & DISCIPLINES
               </h1>
@@ -205,10 +205,10 @@ const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
                 modern product mockups, and commercial photography. Browse categories in the interactive carousel
                 above, and open any project image to view its full case study sub-page.
               </p>
-            </div>
+            </div> */}
 
             {/* Quick Meta Stats Box */}
-            <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4">
+            {/* <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4">
               <div className="bg-slate-50 border border-slate-200 p-5 flex items-center justify-between group hover:border-[#0052fe] transition-colors shadow-xs">
                 <div>
                   <div className="text-[11px] font-black uppercase tracking-widest text-slate-400">DISCIPLINES</div>
@@ -238,7 +238,7 @@ const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
                   <ArrowUpRight className="w-5 h-5" />
                 </button>
               </div>
-            </div>
+            </div>  */}
           </div>
         </div>
       </section>
@@ -563,9 +563,9 @@ const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
       </main>
 
       {/* 5. COLLABORATION & METHODOLOGY CARDS */}
-      <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pb-20">
+      {/* <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Blue Commission Card */}
+          {/* Blue Commission Card *
           <div className="bg-[#0052fe] p-8 sm:p-10 text-white flex flex-col justify-between min-h-[260px] shadow-xl shadow-blue-500/10 group rounded-xl">
             <div>
               <span className="text-[10px] uppercase font-black tracking-[0.2em] text-blue-200">
@@ -587,7 +587,7 @@ const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
             </button>
           </div>
 
-          {/* Dark Methodology Card */}
+          {/* Dark Methodology Card 
           <div className="bg-slate-950 p-8 sm:p-10 text-white flex flex-col justify-between min-h-[260px] shadow-xl group border border-slate-900 rounded-xl">
             <div>
               <span className="text-[10px] uppercase font-black tracking-[0.2em] text-blue-400">
@@ -609,10 +609,10 @@ const Projects: React.FC<ProjectsPageProps> = ({ onOpenContact }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Trusted Client Logos */}
-      <TrustedBy />
+      {/* <TrustedBy /> */}
 
       {/* Global Footer */}
       <FooterSection onOpenContact={onOpenContact} />

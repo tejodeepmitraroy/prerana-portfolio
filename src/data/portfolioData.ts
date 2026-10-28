@@ -73,7 +73,7 @@ export const portfolioConfig = {
     {
       id: "logo-branding",
       name: "Logo & Branding",
-      count: 2,
+      count: 1,
       tagline: "Holistic Product Identity & Commercial Mockups",
       description: "Transforming physical products into cohesive brand ecosystems through bespoke 3D mockups, retail merchandising, and tactile visual identities.",
       images: [
@@ -83,7 +83,7 @@ export const portfolioConfig = {
     {
       id: "packaging",
       name: "Packaging Design",
-      count: 2,
+      count: 1,
       tagline: "Tactile Consumer Packaging & Shelf Presence",
       description: "Engineering retail standup pouches, eco-conscious boxes, and die-cut production labels that captivate consumers on the shelf.",
       images: [
@@ -91,9 +91,9 @@ export const portfolioConfig = {
       ]
     },
     {
-      id: "product-branding",
-      name: "Product Branding",
-      count: 2,
+      id: "design",
+      name: "Design Project",
+      count: 1,
       tagline: "Product Ecosystems & Retail Merchandising",
       description: "Bespoke packaging and modern retail mockups that transform everyday items into memorable consumer experiences.",
       images: [
@@ -116,9 +116,9 @@ export const portfolioConfig = {
     // --- LOGO & BRANDING ---
     {
       id: "design-project-1",
-      category: "Logo & Branding",
-      title: "Lime Fresh Visual Identity",
-      subtitle: "Negative Space Typographic Mark",
+      category: "Design Project",
+      title: "Smart Refregerator",
+      subtitle: "Smart Refegerator ",
       image: "/category/design-project.jpeg",
       images: [
         "/product-design/product-design-1.jpg",
@@ -140,12 +140,12 @@ export const portfolioConfig = {
         "/product-design/product-design-17.jpg",
         "/product-design/product-design-18.jpg"
       ],
-      tags: ["Typography", "Negative Space", "Fruit Branding"],
-      client: "Lime Fresh Organics",
+      tags: ["Technology",'Meets',"LifeStyle"],
+      client: "Design Project",
       year: "2024",
       featured: true,
-      deliverables: ["Bespoke Lettering", "Vector Silhouette Mark", "Monochrome Variants", "Digital Iconography"],
-      stat: { value: "100%", label: "Custom Letterforms" },
+      deliverables: [],
+      stat: { value: "60%", label: "Ergonimic" },
       overview: "An artistic, negative-space typographic logo sculpted directly inside a sliced lime silhouette, embodying pure freshness, organic simplicity, and playful modern geometry."
     },
     {
@@ -208,64 +208,46 @@ export const portfolioConfig = {
       stat: { value: "350gsm", label: "Recycled Board" },
       overview: "An artisanal, tactile stand-up zipper pouch engineered for organic dried goods, featuring warm organic earth tones and a soft-touch matte protective barrier."
     },
-    {
-      id: "carrot-packaging",
-      category: "Packaging Design",
-      title: "Carrot Organic Produce Pack",
-      subtitle: "Sustainable Produce Box & Labeling",
-      image: "/package-design/Gemini_Generated_Image_stpqucstpqucstpq.png",
-      images: [
-        "/package-design/Gemini_Generated_Image_stpqucstpqucstpq.png",
-        "/package-design/new without pic pack.png",
-        "/package-design/packing carrot with out picture.png"
-      ],
-      tags: ["Farm Packaging", "Eco Box", "Label Design"],
-      client: "Al Huda Herbal Remedies",
-      year: "2024",
-      featured: false,
-      deliverables: ["Corrugated Box Design", "Die-Cut Windows", "Eco Seal System", "Barcode Architecture"],
-      stat: { value: "100%", label: "Compostable" },
-      overview: "Ergonomic farm-to-table organic harvest packaging with breathable ventilation die-cuts and minimal ink usage."
-    },
+    // {
+    //   id: "carrot-packaging",
+    //   category: "Packaging Design",
+    //   title: "Carrot Organic Produce Pack",
+    //   subtitle: "Sustainable Produce Box & Labeling",
+    //   image: "/package-design/Gemini_Generated_Image_stpqucstpqucstpq.png",
+    //   images: [
+        
+    //     "/package-design/new without pic pack.png",
+    //     "/package-design/packing carrot with out picture.png"
+    //   ],
+    //   tags: ["Farm Packaging", "Eco Box", "Label Design"],
+    //   client: "Al Huda Herbal Remedies",
+    //   year: "2024",
+    //   featured: false,
+    //   deliverables: ["Corrugated Box Design", "Die-Cut Windows", "Eco Seal System", "Barcode Architecture"],
+    //   stat: { value: "100%", label: "Compostable" },
+    //   overview: "Ergonomic farm-to-table organic harvest packaging with breathable ventilation die-cuts and minimal ink usage."
+    // },
 
     // --- PRODUCT BRANDING ---
-    {
-      id: "lime-eco-bags",
-      category: "Product Branding",
-      title: "LIME Sustainable Retail Bags",
-      subtitle: "Kraft Paper Carry Bags & Eco Merchandising",
-      image: "/product-branding/lime mocab.jpg.jpeg",
-      images: [
-        "/product-branding/lime mocab.jpg.jpeg",
-        "/product-branding/mocab 2.jpg.jpeg",
-        "/product-branding/Screenshot 2026-07-03 222402.png"
-      ],
-      tags: ["Eco Packaging", "Retail Carry Bags", "Kraft Paper"],
-      client: "Lime Fresh Organics",
-      year: "2024",
-      featured: true,
-      deliverables: ["Screenprinted Kraft Bags", "Twisted Paper Handles", "Sustainable Store Collateral", "Point-of-Sale Signage"],
-      stat: { value: "100%", label: "Biodegradable" },
-      overview: "Sustainable, unbleached kraft paper shopping bags featuring organic botanical typography, designed to elevate in-store customer touchpoints and affirm the brand's eco-conscious mission."
-    },
-    {
-      id: "soda-can-branding",
-      category: "Product Branding",
-      title: "Sparkling Soda Can Mockup",
-      subtitle: "Aluminum Can Label & Retail Visuals",
-      image: "/product-branding/mockup soda can.png",
-      images: [
-        "/product-branding/mockup soda can.png",
-        "/product-branding/Screenshot 2026-06-13 060442.png"
-      ],
-      tags: ["Beverage Can", "Retail Mockup", "3D Visualization"],
-      client: "TechNova Refresh",
-      year: "2025",
-      featured: false,
-      deliverables: ["3D Can Render", "Label Foil Details", "Packaging Mockups", "Print-Ready Vector Files"],
-      stat: { value: "330ml", label: "Can Spec" },
-      overview: "High-contrast dynamic beverage packaging mockup crafted with vivid typography and matte-finish metallic gradients for maximal shelf attraction."
-    },
+    
+    // {
+    //   id: "soda-can-branding",
+    //   category: "Product Branding",
+    //   title: "Sparkling Soda Can Mockup",
+    //   subtitle: "Aluminum Can Label & Retail Visuals",
+    //   image: "/product-branding/mockup soda can.png",
+    //   images: [
+    //     "/product-branding/mockup soda can.png",
+    //     "/product-branding/Screenshot 2026-06-13 060442.png"
+    //   ],
+    //   tags: ["Beverage Can", "Retail Mockup", "3D Visualization"],
+    //   client: "TechNova Refresh",
+    //   year: "2025",
+    //   featured: false,
+    //   deliverables: ["3D Can Render", "Label Foil Details", "Packaging Mockups", "Print-Ready Vector Files"],
+    //   stat: { value: "330ml", label: "Can Spec" },
+    //   overview: "High-contrast dynamic beverage packaging mockup crafted with vivid typography and matte-finish metallic gradients for maximal shelf attraction."
+    // },
 
     // --- PHOTOGRAPHY ---
     {

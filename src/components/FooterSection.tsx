@@ -14,7 +14,7 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onOpenContact }) =
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 pb-16 border-b border-neutral-900 items-center">
           
           {/* Left CTA Card: Blue Banner */}
-          <div
+          {/* <div
             onClick={onOpenContact}
             className="lg:col-span-6 bg-[#0052fe] hover:bg-[#0047df] transition-colors duration-300 rounded-sm p-8 sm:p-10 flex items-center justify-between cursor-pointer group shadow-xl shadow-blue-500/10"
           >
@@ -27,11 +27,11 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onOpenContact }) =
               </h3>
             </div>
 
-            {/* Circular Arrow Button */}
+            {/* Circular Arrow Button 
             <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border border-white/40 flex items-center justify-center shrink-0 ml-4 group-hover:bg-white group-hover:text-[#0052fe] transition-all duration-300 transform group-hover:scale-105">
               <ArrowUpRight className="w-6 h-6 sm:w-7 sm:h-7" />
             </div>
-          </div>
+          </div> */}
 
           {/* Right Section: Get in touch & Follow */}
           <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 lg:pl-6">
