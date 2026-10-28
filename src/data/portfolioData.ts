@@ -97,7 +97,7 @@ export const portfolioConfig = {
       tagline: "Product Ecosystems & Retail Merchandising",
       description: "Bespoke packaging and modern retail mockups that transform everyday items into memorable consumer experiences.",
       images: [
-        "/product-branding/lime mocab.jpg.jpeg"
+        "/category/design-project.jpeg"
       ]
     },
     {
@@ -119,11 +119,26 @@ export const portfolioConfig = {
       category: "Logo & Branding",
       title: "Lime Fresh Visual Identity",
       subtitle: "Negative Space Typographic Mark",
-      image: "/category/logo.png",
+      image: "/category/design-project.jpeg",
       images: [
-        "/category/logo.png",
-        "/logo-banding/logo-1.png",
-        "/logo-banding/Screenshot 2026-07-11 145607.png"
+        "/product-design/product-design-1.jpg",
+        "/product-design/product-design-2.jpg",
+        "/product-design/product-design-3.jpg",
+        "/product-design/product-design-4.jpg",
+        "/product-design/product-design-5.jpg",
+        "/product-design/product-design-6.jpg",
+        "/product-design/product-design-7.jpg",
+        "/product-design/product-design-8.jpg",
+        "/product-design/product-design-9.jpg",
+        "/product-design/product-design-10.jpg",
+        "/product-design/product-design-11.jpg",
+        "/product-design/product-design-12.jpg",
+        "/product-design/product-design-13.jpg",
+        "/product-design/product-design-14.jpg",
+        "/product-design/product-design-15.jpg",
+        "/product-design/product-design-16.jpg",
+        "/product-design/product-design-17.jpg",
+        "/product-design/product-design-18.jpg"
       ],
       tags: ["Typography", "Negative Space", "Fruit Branding"],
       client: "Lime Fresh Organics",
@@ -142,7 +157,21 @@ export const portfolioConfig = {
       images: [
         "/logo-banding/logo-bangur-1.png",
         "/logo-banding/logo-bangur-2.png",
-        "/logo-banding/Screenshot 2026-07-11 145539.png"
+        "/logo-banding/logo-bangur-3 (1).png",
+        "/logo-banding/logo-bangur-3 (2).png",
+        "/logo-banding/logo-bangur-3 (3).png",
+        "/logo-banding/logo-bangur-3 (4).png",
+        "/logo-banding/logo-bangur-3 (5).png",
+        "/logo-banding/logo-bangur-3 (6).png",
+        "/logo-banding/Screenshot 2026-07-11 145539.png",
+        "/logo-banding/Screenshot 2026-07-11 145554.png",
+        "/logo-banding/Screenshot 2026-07-11 145607.png",
+        "/logo-banding/Screenshot 2026-07-11 145622.png",
+        "/logo-banding/Screenshot 2026-07-13 133822.png",
+        "/logo-banding/Screenshot 2026-07-13 135716.png",
+        "/logo-banding/Screenshot 2026-07-13 135742.png",
+        "/logo-banding/Screenshot 2026-07-13 140048.png",
+        "/logo-banding/Screenshot 2026-07-13 150934.png"
       ],
       tags: ["Brand Guidelines", "Logomark", "Corporate Identity"],
       client: "Bangur BFL Corp",
@@ -163,7 +192,13 @@ export const portfolioConfig = {
       images: [
         "/category/packaging.png",
         "/package-design/Gemini_Generated_Image_1gsuup1gsuup1gsu.png",
-        "/package-design/Screenshot 2026-07-13 155016.png"
+        "/package-design/Gemini_Generated_Image_l4decil4decil4de.png",
+        "/package-design/Gemini_Generated_Image_mbzub8mbzub8mbzu.png",
+        "/package-design/Screenshot 2026-07-13 155016.png",
+        "/package-design/Screenshot 2026-07-13 155046.png",
+        "/package-design/Screenshot 2026-07-14 133309.png",
+        "/package-design/Screenshot 2026-07-15 164209.png",
+        "/package-design/Screenshot 2026-07-17 164836.png"
       ],
       tags: ["Retail Standup Pouch", "Matte Foil", "Food Packaging"],
       client: "Bhanu Farms Ltd",
@@ -181,7 +216,8 @@ export const portfolioConfig = {
       image: "/package-design/Gemini_Generated_Image_stpqucstpqucstpq.png",
       images: [
         "/package-design/Gemini_Generated_Image_stpqucstpqucstpq.png",
-        "/package-design/new without pic pack.png"
+        "/package-design/new without pic pack.png",
+        "/package-design/packing carrot with out picture.png"
       ],
       tags: ["Farm Packaging", "Eco Box", "Label Design"],
       client: "Al Huda Herbal Remedies",
@@ -239,7 +275,10 @@ export const portfolioConfig = {
       subtitle: "Studio Lighting & Editorial Stills",
       image: "/category/photography.jpeg",
       images: [
-        "/category/photography.jpeg"
+        "/photography/photography-1.jpeg",
+        "/photography/photography-2.jpeg",
+        "/photography/photography-3.jpeg",
+        "/photography/photography-4.jpeg"
       ],
       tags: ["Studio Stills", "Editorial Direction", "Lighting"],
       client: "EVAR Enterprises",
