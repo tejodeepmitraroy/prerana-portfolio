@@ -4,11 +4,11 @@ import {
   ArrowUpRight,
   Search,
   SlidersHorizontal,
-  Layers,
+ 
   ArrowRight,
   Filter,
   Eye,
-  CheckCircle2,
+  
   FolderOpen,
   Sparkles,
   ChevronLeft,
@@ -17,7 +17,7 @@ import {
 import { portfolioConfig } from '../data/portfolioData';
 import type { ProjectItem, CategoryInfo } from '../data/portfolioData';
 import { ProjectModal } from '../components/ProjectModal';
-import { TrustedBy } from '../components/TrustedBy';
+
 import { FooterSection } from '../components/FooterSection';
 
 interface ProjectsPageProps {

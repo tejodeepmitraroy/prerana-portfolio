@@ -1,12 +1,13 @@
 import React from 'react';
-import { ArrowUpRight, Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import { portfolioConfig } from '../data/portfolioData';
+import { Link } from 'react-router-dom';
 
 interface FooterSectionProps {
   onOpenContact?: () => void;
 }
 
-export const FooterSection: React.FC<FooterSectionProps> = ({ onOpenContact }) => {
+export const FooterSection: React.FC<FooterSectionProps> = () => {
   return (
     <footer id="contact" className="w-full bg-[#0a0a0a] text-white pt-16 pb-8 border-t border-neutral-900">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -96,7 +97,7 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onOpenContact }) =
             <span className="text-xl font-black text-white tracking-tighter">
               <img src="/logo.png" alt="" className='w-6 invert-100' />
             </span>
-            <span>© 2025 Prerana Dutta. All rights reserved.</span>
+            <span>© 2025 Prerana Dutta. All rights reserved. Developed By: <Link to="https://flexerlabs.com" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors underline font-bold"> FlexerLabs</Link></span>
           </div>
 
           <div className="flex items-center gap-6">
