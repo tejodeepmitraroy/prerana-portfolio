@@ -3,6 +3,7 @@ import { AboutSection } from '../components/AboutSection';
 import { StatsCounter } from '../components/StatsCounter';
 import { TrustedBy } from '../components/TrustedBy';
 import { FooterSection } from '../components/FooterSection';
+import { portfolioConfig } from '../data/portfolioData';
 
 interface AboutPageProps {
   onOpenContact?: () => void;
@@ -17,11 +18,11 @@ const About: React.FC<AboutPageProps> = ({ onOpenContact }) => {
             BIOGRAPHY & PHILOSOPHY
           </span>
           <h1 className="text-4xl sm:text-6xl font-black text-slate-950 uppercase tracking-tight">
-            ABOUT <span className="text-[#0052fe]">ALEX CARTER</span>
+            ABOUT <span className="text-[#0052fe]">{portfolioConfig.name.toUpperCase()}</span>
           </h1>
         </div>
       </div>
-      <AboutSection />
+      <AboutSection onOpenContact={onOpenContact} />
       <StatsCounter />
       <TrustedBy />
       <FooterSection onOpenContact={onOpenContact} />

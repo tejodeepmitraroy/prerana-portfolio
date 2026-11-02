@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Sparkles, MapPin } from 'lucide-react';
+import { ArrowRight,  MapPin } from 'lucide-react';
 import { portfolioConfig } from '../data/portfolioData';
 
 interface HeroProps {
@@ -149,7 +149,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact: _onOpenCo
             </div>
 
             {/* Image Stage Container */}
-            <div className="relative w-full max-w-[420px] aspect-[4/5] sm:aspect-[3.6/4.8] flex items-end justify-center">
+            <div className="relative w-full max-w-[200px] aspect-[4/5] sm:aspect-[3.6/4.8] flex items-end justify-center">
               {/* Secondary subtle line accent */}
               <div className="absolute -bottom-4 -left-4 w-28 h-28 border-2 border-slate-900/10 -z-10" />
 
@@ -167,7 +167,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact: _onOpenCo
               </div>
 
               {/* Interactive Badge (Left Corner) */}
-              <div className="absolute bottom-6 -left-4 sm:-left-8 z-20 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-none border border-slate-200/90 shadow-xl shadow-slate-900/10 flex items-center gap-3">
+              {/* <div className="absolute bottom-6 -left-4 sm:-left-8 z-20 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-none border border-slate-200/90 shadow-xl shadow-slate-900/10 flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-[#0052fe]">
                   <Sparkles className="w-4 h-4 animate-spin-slow" />
                 </div>
@@ -176,7 +176,7 @@ export const Hero: React.FC<HeroProps> = ({ onViewWork, onOpenContact: _onOpenCo
                     Industrial Designer
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
           </div>

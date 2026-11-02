@@ -54,7 +54,7 @@ const Home: React.FC<HomeProps> = ({ onOpenContact }) => {
       {/* <ServicesSection /> */}
 
       {/* About Me & Skills Section */}
-      <AboutSection />
+      <AboutSection onOpenContact={handleOpenContact} />
 
       {/* Trusted By Client Logos */}
       {/* <TrustedBy /> */}
