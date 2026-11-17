@@ -9,6 +9,7 @@ export interface ProjectItem {
   tags: string[];
   client?: string;
   year?: string;
+  location?: string;
   overview?: string;
   featured?: boolean;
   deliverables?: string[];
@@ -113,12 +114,12 @@ export const portfolioConfig = {
   ] as CategoryInfo[],
 
   projects: [
-    // --- LOGO & BRANDING ---
+    // 1
     {
       id: "design-project-1",
       category: "Design Project",
-      title: "Smart Refregerator",
-      subtitle: "Smart Refegerator ",
+      title: "Smart Refrigerator",
+      subtitle: "Smart Refrigerator Lifestyle Concept",
       image: "/category/design-project.jpeg",
       images: [
         "/product-design/product-design-1.jpg",
@@ -140,18 +141,20 @@ export const portfolioConfig = {
         "/product-design/product-design-17.jpg",
         "/product-design/product-design-18.jpg"
       ],
-      tags: ["Technology",'Meets',"LifeStyle"],
+      tags: ["Technology", "Meets", "LifeStyle"],
       client: "Design Project",
       year: "2024",
+      location: "India, 2024",
       featured: true,
-      deliverables: [],
-      stat: { value: "60%", label: "Ergonimic" },
-      overview: "An artistic, negative-space typographic logo sculpted directly inside a sliced lime silhouette, embodying pure freshness, organic simplicity, and playful modern geometry."
+      deliverables: ["Product CAD", "Ergonomics Research", "3D Renders"],
+      stat: { value: "60%", label: "Ergonomic" },
+      overview: "An innovative, ergonomic smart refrigerator architecture designed to streamline kitchen workflow, elevate aesthetics, and blend technology with modern lifestyle ergonomics."
     },
+    // 2
     {
       id: "bangur-brand-suite",
-      category: "Logo & Branding",
-      title: "Bangur Brand System & Guidelines",
+      category: "Branding",
+      title: "Bangur Brand System",
       subtitle: "Corporate Identity & Geometry Mark",
       image: "/logo-banding/logo-bangur-1.png",
       images: [
@@ -176,17 +179,17 @@ export const portfolioConfig = {
       tags: ["Brand Guidelines", "Logomark", "Corporate Identity"],
       client: "Bangur BFL Corp",
       year: "2024",
-      featured: false,
-      deliverables: ["Logotype System", "Visual Identity Matrix", "Corporate Stationary", "Brand Book"],
+      location: "Spain, 2024",
+      featured: true,
+      deliverables: ["Logotype System", "Visual Identity Matrix", "Corporate Stationery", "Brand Book"],
       stat: { value: "100%", label: "Vector Cohesion" },
       overview: "A structured, geometric corporate identity system balancing high structural rigidity with minimalist contemporary finesse."
     },
-
-    // --- PACKAGING DESIGN ---
+    // 3
     {
       id: "eco-packaging-pouch",
-      category: "Packaging Design",
-      title: "Eco-Conscious Retail Pouch",
+      category: "Packaging",
+      title: "Eco Retail Pouch",
       subtitle: "Matte Foil Standup Pouch Packaging",
       image: "/category/packaging.png",
       images: [
@@ -203,57 +206,58 @@ export const portfolioConfig = {
       tags: ["Retail Standup Pouch", "Matte Foil", "Food Packaging"],
       client: "Bhanu Farms Ltd",
       year: "2024",
+      location: "Italy, 2024",
       featured: true,
       deliverables: ["Dieline Architecture", "Pantone Spec Sheet", "Spot UV Application", "Nutritional Layout"],
       stat: { value: "350gsm", label: "Recycled Board" },
       overview: "An artisanal, tactile stand-up zipper pouch engineered for organic dried goods, featuring warm organic earth tones and a soft-touch matte protective barrier."
     },
-    // {
-    //   id: "carrot-packaging",
-    //   category: "Packaging Design",
-    //   title: "Carrot Organic Produce Pack",
-    //   subtitle: "Sustainable Produce Box & Labeling",
-    //   image: "/package-design/Gemini_Generated_Image_stpqucstpqucstpq.png",
-    //   images: [
-        
-    //     "/package-design/new without pic pack.png",
-    //     "/package-design/packing carrot with out picture.png"
-    //   ],
-    //   tags: ["Farm Packaging", "Eco Box", "Label Design"],
-    //   client: "Al Huda Herbal Remedies",
-    //   year: "2024",
-    //   featured: false,
-    //   deliverables: ["Corrugated Box Design", "Die-Cut Windows", "Eco Seal System", "Barcode Architecture"],
-    //   stat: { value: "100%", label: "Compostable" },
-    //   overview: "Ergonomic farm-to-table organic harvest packaging with breathable ventilation die-cuts and minimal ink usage."
-    // },
-
-    // --- PRODUCT BRANDING ---
-    
-    // {
-    //   id: "soda-can-branding",
-    //   category: "Product Branding",
-    //   title: "Sparkling Soda Can Mockup",
-    //   subtitle: "Aluminum Can Label & Retail Visuals",
-    //   image: "/product-branding/mockup soda can.png",
-    //   images: [
-    //     "/product-branding/mockup soda can.png",
-    //     "/product-branding/Screenshot 2026-06-13 060442.png"
-    //   ],
-    //   tags: ["Beverage Can", "Retail Mockup", "3D Visualization"],
-    //   client: "TechNova Refresh",
-    //   year: "2025",
-    //   featured: false,
-    //   deliverables: ["3D Can Render", "Label Foil Details", "Packaging Mockups", "Print-Ready Vector Files"],
-    //   stat: { value: "330ml", label: "Can Spec" },
-    //   overview: "High-contrast dynamic beverage packaging mockup crafted with vivid typography and matte-finish metallic gradients for maximal shelf attraction."
-    // },
-
-    // --- PHOTOGRAPHY ---
+    // 4
+    {
+      id: "logofolio-collection",
+      category: "Logofolio",
+      title: "Logofolio",
+      subtitle: "Selected Marks & Identity Explorations",
+      image: "/logo-banding/logo-1.png",
+      images: [
+        "/logo-banding/logo-1.png",
+        "/logo-banding/Screenshot 2026-07-11 145539.png",
+        "/logo-banding/Screenshot 2026-07-11 145607.png"
+      ],
+      tags: ["Logofolio", "Identity Grid", "Minimal Marks"],
+      client: "Various Clients",
+      year: "2022-2024",
+      location: "2022-2024",
+      featured: true,
+      deliverables: ["Mark Guidelines", "Vector Library", "Grid Construction"],
+      stat: { value: "24+", label: "Marks Created" },
+      overview: "A comprehensive grid-based compendium of marks, crests, and emblems crafted for forward-thinking international brands."
+    },
+    // 5
+    {
+      id: "soda-can-branding",
+      category: "Illustration",
+      title: "TechNova Can Branding",
+      subtitle: "Aluminum Can Label & Retail Visuals",
+      image: "/product-branding/mockup soda can.png",
+      images: [
+        "/product-branding/mockup soda can.png",
+        "/product-branding/Screenshot 2026-06-13 060442.png"
+      ],
+      tags: ["Beverage Can", "Retail Mockup", "3D Visualization"],
+      client: "TechNova Refresh",
+      year: "2022",
+      location: "USA, 2022",
+      featured: true,
+      deliverables: ["3D Can Render", "Label Foil Details", "Packaging Mockups", "Print-Ready Vector Files"],
+      stat: { value: "330ml", label: "Can Spec" },
+      overview: "High-contrast dynamic beverage packaging mockup crafted with vivid typography and metallic accents for maximum shelf impact."
+    },
+    // 6
     {
       id: "studio-photography",
-      category: "Photography",
-      title: "Commercial Product Photography",
+      category: "Illustration",
+      title: "Commercial Stills",
       subtitle: "Studio Lighting & Editorial Stills",
       image: "/category/photography.jpeg",
       images: [
@@ -264,11 +268,75 @@ export const portfolioConfig = {
       ],
       tags: ["Studio Stills", "Editorial Direction", "Lighting"],
       client: "EVAR Enterprises",
-      year: "2025",
-      featured: false,
+      year: "2024",
+      location: "Peru, 2024",
+      featured: true,
       deliverables: ["Studio Lighting Setup", "Hi-Res Retouching", "Color Grading", "Social Media Lookbook"],
       stat: { value: "8K", label: "Studio Capture" },
       overview: "High-key editorial and commercial photography capturing tactile product surfaces, material textures, and industrial silhouettes."
+    },
+    // 7
+    {
+      id: "lifestyle-appliance",
+      category: "Illustration",
+      title: "Lifestyle Concepts",
+      subtitle: "Industrial Concept Modeling & CMF",
+      image: "/product-design/product-design-2.jpg",
+      images: [
+        "/product-design/product-design-2.jpg",
+        "/product-design/product-design-3.jpg",
+        "/product-design/product-design-4.jpg"
+      ],
+      tags: ["Industrial Design", "CMF", "Prototyping"],
+      client: "Prerana Dutta Studio",
+      year: "2024",
+      location: "Peru, 2024",
+      featured: true,
+      deliverables: ["Ergonomic Prototyping", "CMF Direction", "Form Exploration"],
+      stat: { value: "98%", label: "User Satisfaction" },
+      overview: "A clean study in modern industrial forms, balancing warm tactile surfaces with seamless functional ergonomics."
+    },
+    // 8
+    {
+      id: "carrot-packaging",
+      category: "Web Design",
+      title: "Carrot Organic Produce",
+      subtitle: "Sustainable Produce Box & Labeling",
+      image: "/package-design/Gemini_Generated_Image_stpqucstpqucstpq.png",
+      images: [
+        "/package-design/Gemini_Generated_Image_stpqucstpqucstpq.png",
+        "/package-design/new without pic pack.png",
+        "/package-design/packing carrot with out picture.png"
+      ],
+      tags: ["Farm Packaging", "Eco Box", "Label Design"],
+      client: "Al Huda Herbal Remedies",
+      year: "2024",
+      location: "UK, 2024",
+      featured: true,
+      deliverables: ["Corrugated Box Design", "Die-Cut Windows", "Eco Seal System", "Barcode Architecture"],
+      stat: { value: "100%", label: "Compostable" },
+      overview: "Ergonomic farm-to-table organic harvest packaging with breathable ventilation die-cuts and minimal eco-ink usage."
+    },
+    // 9
+    {
+      id: "cold-brew-packaging",
+      category: "Packaging",
+      title: "Artisanal Cold Brew",
+      subtitle: "Amber Bottle Packaging & Label System",
+      image: "/package-design/Gemini_Generated_Image_1gsuup1gsuup1gsu.png",
+      images: [
+        "/package-design/Gemini_Generated_Image_1gsuup1gsuup1gsu.png",
+        "/package-design/Gemini_Generated_Image_l4decil4decil4de.png",
+        "/package-design/Gemini_Generated_Image_mbzub8mbzub8mbzu.png"
+      ],
+      tags: ["Cold Brew", "Bottle Label", "Retail Packaging"],
+      client: "Bespoke Brew Co",
+      year: "2022",
+      location: "Peru, 2022",
+      featured: true,
+      deliverables: ["Label Design", "Amber Bottle Mockup", "Vector Typography"],
+      stat: { value: "100%", label: "Recyclable Glass" },
+      overview: "Tactile botanical label system crafted for small-batch amber glass cold brew bottles, radiating warmth and craft heritage."
     }
   ] as ProjectItem[],
 
